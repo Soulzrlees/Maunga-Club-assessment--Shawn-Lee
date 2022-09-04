@@ -1,0 +1,26 @@
+#Logo_id {
+    width: 20%;
+    margin-top: 20px;
+    padding-left: 100px;
+
+}
+
+.bar {
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 1000px;
+    text-decoration: none;
+    line-height: 65px;
+    padding: 30px;
+}
+
+nav {
+    float: right;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+header {
+    background-color: black;
+}
