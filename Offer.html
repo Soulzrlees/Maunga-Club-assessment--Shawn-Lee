@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="Navigation Bar.css">
     <link rel="stylesheet" href="Text and images (homepage) .css">
     <link rel="stylesheet" href="Polariod.css">
+    <link rel="stylesheet" href="Text and images(Offerpage).css">
+    <link rel="stylesheet" href="Slideshow.css">
 </head>
 <body>
     <header>
@@ -82,5 +84,99 @@
         <p id="polariodtext2" class="container">•maximum children (4)</p>
       </div>
     </div>
-</body> 
+  <!--Extra information about chalets in general-->
+  <p id="Chaletextrainfo"> Extra Info</p>
+  
+  <!--Slideshow of different images-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kakapo\bunk_room.jpg" style="width:100%">
+      <div class="text">(Kakapo) Bunk_room</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kakapo\cabin_view.jpg" style="width:100%">
+      <div class="text">(Kakapo) Cabin_view</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kakapo\hallway.jpg" style="width:100%">
+      <div class="text">(Kakapo) Hallway</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\pukeko\adult_bedroom.jpg" style="width:100%">
+      <div class="text">(Kereru) Adult_bedroom</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kereru\kids_bedroom.jpg" style="width:100%">
+      <div class="text">(Kereru) Kids_bedroom</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kereru\kitchen.jpg" style="width:100%">
+      <div class="text">(Kereru) Kitchen</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\pukeko\adult_bedroom.jpg" style="width:100%">
+      <div class="text">(Pukeko) Adult_bedroom</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\pukeko\bathroom.jpg" style="width:100%">
+      <div class="text">(Pukeko) Bathroom</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\pukeko\chalet_view.jpg" style="width:100%">
+      <div class="text">(Pukeko) Chalet_view</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+  
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+</body>
 </html>
