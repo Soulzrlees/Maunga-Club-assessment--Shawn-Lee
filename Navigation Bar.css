@@ -1,26 +1,32 @@
-#Logo_id {
+/* Logo Size */
+#Logo_id{
     width: 20%;
-    margin-top: 20px;
-    padding-left: 100px;
-
 }
 
+/* Navigation Bar positioning and text styles*/
 .bar {
     color: white;
-    font-style: italic;
     font-size: 25px;
     font-weight: 1000px;
     text-decoration: none;
     line-height: 65px;
-    padding: 30px;
+    padding: 40px;
 }
 
+/* Wdith of navigation bar */
 nav {
     float: right;
     padding-right: 30px;
-    padding-top: 30px;
 }
 
+/* Color of the navigation bar */
 header {
     background-color: black;
 }
+
+/* Allow a change of border color when user hover over it */
+.bar:hover {
+    background-color: white;
+    border-radius: 1000px;
+    color: black;
+  }
