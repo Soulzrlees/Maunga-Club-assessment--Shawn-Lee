@@ -1,1 +1,1 @@
-# Maunga-Club-assessment--Shawn-Lee
+This file is the creation of a website on promoting Maunga Club about the chalets. Gather more customers into signning up. This github would contain all of the nessary files to run a functional website.
