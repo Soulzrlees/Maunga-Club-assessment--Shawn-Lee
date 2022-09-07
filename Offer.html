@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="Polariod.css">
     <link rel="stylesheet" href="Text and images(Offerpage).css">
     <link rel="stylesheet" href="Slideshow.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-      <!--Navigation Bar and tab title--> 
-        <img id="Logo_id" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\Maunga_Club_white.png">
+  <header> 
+    <!--Navigation Bar and tab title-->
+        <a href="Homepage.html">
+            <img id="Logo_id" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\Maunga_Club_white.png">
+        </a>
         <nav>
             <a class="bar" href="Homepage.html">Home</a>
-            <a class="bar" href="Offer.html">Offer</a>
+            <a class="bar" href="Offer.html">Chalet</a>
             <a class="bar" href="Contact.html">Contact</a>
         </nav>
     </header>
@@ -28,8 +32,8 @@
         <div class="centered">Chalet</div>
       </div>
     
-    <!--Pictures of the Chalet as well as information about the chalet-->
-    <div class="polaroid" id="polariod1">
+    <!--Pictures of the Chalet as well as information about the chalet-->   
+    <div class="polaroid" id="polariod1" data-aos="fade-left" data-aos-duration="1000"  >
 
       <div>
         <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\kakapo\cabin_exterior_thumb.jpg" alt="kakapo" style="width:100%">
@@ -45,9 +49,9 @@
         <p id="polariodtext1" class="container">•Maximum adults (10)</p>
         <p id="polariodtext1" class="container">•maximum children (30)</p>
       </div>
-      </div>
+    </div>
       
-      <div class="polaroidd" id="polariod2">
+    <div class="polaroidd" id="polariod2" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
       <div>
         <p></p>
       </div>
@@ -65,9 +69,9 @@
           <p>Kereru</p>
         </div>
       </div>
-      </div>
+    </div>
       
-      <div class="polaroid" id="polariod3">
+    <div class="polaroid" id="polariod3" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
       <div>
         <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\pukeko\chalet_exterior_thumb.jpg" alt="pukeko" style="width:100%">
         <div class="container">
@@ -87,8 +91,8 @@
   <!--Extra information about chalets in general-->
   <p id="Chaletextrainfo"> Extra Info</p>
   
-  <!--Slideshow of different images-->
-  <div class="slideshow-container">
+  <!--Slideshow of different-->
+  <div class="slideshow-container" data-aos="zoom-in" data-aos-duration="1000">
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 9</div>
@@ -149,34 +153,25 @@
     
     </div>
     <br>
-  
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
       
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
+    <div style="text-align:center" data-aos="fade-up">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span> 
+    </div>
 </body>
+<script src="Slideshowjs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  AOS.init();
+</script>
+<footer>
+  <p class="footer">&copy; Maunga Club 2022 - Shawn Lee Inc.</p>
+</footer>
 </html>
