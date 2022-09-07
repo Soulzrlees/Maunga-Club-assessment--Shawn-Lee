@@ -1,6 +1,8 @@
+<!-- basic html function for starting a website -->
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Contains css files for the styles of the content in this Homepage-->
 <head>
     <meta charset="UTF-8">
     <title>Maunga Club Website</title>
@@ -8,26 +10,35 @@
     <link rel="stylesheet" href="Text and images (homepage) .css">
     <link rel="stylesheet" href="Buttons (homepage).css">
     <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header> 
-        <img id="Logo_id" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\Maunga_Club_white.png">
-        <nav>
-            <a class="bar" href="Homepage.html">Home</a>
-            <a class="bar" href="Offer.html">Offer</a>
-            <a class="bar" href="Contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="container">
+        <!--Navigation Bar and tab title-->
+            <a href="Homepage.html">
+                <img id="Logo_id" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\Maunga_Club_white.png">
+            </a>
+            <nav>
+                <a class="bar" href="Homepage.html">Home</a>
+                <a class="bar" href="Offer.html">Chalet</a>
+                <a class="bar" href="Contact.html">Contact</a>
+            </nav>
+        </header>
+    <!--Introduction text and introduction picture-->
+    <div class="containerintro">
         <img src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\maunga_club_cabin.jpg" style="width:100%;">
         <div class="centered">Welcome to Maunga Club!</div>
       </div>
-    
-    <img id="pic1" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\mountain_view_light.jpg">
-    <p id="infotext1"> Maunga Club is a club that offers many different chalets(cabin) to stay in ensuring that customers would be satisfied with the chalets that they choose. Go to the contact tab for more information about how to register.</p>
-    <a id="Contactbutton1" class="button" href="Contact.html">Contact</a>
+    <!-- Body content(text, picture and button)-->
+    <img id="pic1" data-aos="fade-right" src="C:\Users\Shawn Lee\Desktop\Maunga Club\Images\mountain_view_light.jpg">
+    <p id="infotext1"> Maunga Club is a club that offers many different chalets to stay in ensuring that customers would be satisfied with the chalets that they choose. Go to the contact tab for more information about how to register.</p>
+    <a id="Contactbutton1" class="button" href="Contact.html">Sign Up Now!</a>
 <body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    AOS.init();
+</script>
+<!--Ending with the creator and copy right law-->
 <footer>
     <p class="footer">&copy; Maunga Club 2022 - Shawn Lee Inc.</p>
 </footer>
