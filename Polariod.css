@@ -1,38 +1,44 @@
+/*  Main styles for the pictures and text that favors the right */
 .polaroid{
     width: 350px;
     height: 350px;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: black;
     color: white;
+    position: relative; left: 150px;
 
     margin-right: 20%;
     display:grid;
     grid-template-columns: 25% auto 35%;
 }
 
+/*  Main styles for the pictures and text that favors the left */
 .polaroidd{
     width: 350px;
     height: 350px;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: black;
     color: white;
+    position: relative; right: 150  px;
 
     margin-right: 20%;
     display:grid;
     grid-template-columns: 35% auto 25%;
 }
 
+/* A container that contains the picture and the text under the picture */
 .container {
     text-align: center;
     margin: 20px;
 }
 
+/* custom positioning and styles for pic 1 */
 #polariod1{
     float: left;
     width: 80%;
@@ -40,10 +46,10 @@
     border: 20px solid;
     border-color: black;
     border-radius: 1000px;
-    margin-left: 250px;
-    
+    margin-left: 250px;   
 }
 
+/* custom positioning and styles for pic 2 */
 #polariod2{
     float: right;
     width: 80%;
@@ -52,9 +58,9 @@
     border-color: black;
     border-radius: 1000px;
     margin-right: 250px;
-
 }
 
+/* custom positioning and styles for pic 3 */
 #polariod3{
     float: left;
     width: 80%;
@@ -65,7 +71,7 @@
     margin-left: 250px;
 }
 
+/* text Color */
 #polariodtext1{
     color: white;
-    
 }
