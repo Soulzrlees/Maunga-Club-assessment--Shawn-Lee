@@ -1,9 +1,11 @@
-.container {
+/* Container for Text on the intro pictures */
+.containerintro {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
 
+/* Text style for the intro Text */
 .centered {
     position: absolute;
     top: 50%;
@@ -11,36 +13,38 @@
     transform: translate(-50%, -50%);
     font-size: 100px;
     font-weight: bold;
-    border: 50px solid;
-    border-radius: 1000px;
+    border: 30px solid;
+    border-radius: 100px;
+    padding: 20px;
   }
 
+/* body Color and hiding the tiny side bars on either side of the page */
 body {
     background-color: whitesmoke;
     margin: 0;
     overflow-x: hidden;
 }
 
-
+/* text style and positioning of the information in main page */
 #infotext1{
-  font-style: italic;
   font-size: 25px;
   font-weight: 500px;
   color: white;
   text-align: left;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-right: 60%;
-  padding-left: 20%;
+  padding-right: 70%;
+  padding-left: 10%;
   background-color: black;
 }
 
+/* styles for info picture */
 #pic1{
   height: 300px;
   width: 700px;
   float: right;
-  margin-top: 18px;
+  margin-top: 20px;
   margin-right: 10%;
-  border: 50px solid;
+  border: 20px solid;
   border-color: whitesmoke;
 }
