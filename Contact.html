@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="Navigation Bar.css">
     <link rel="stylesheet" href="Text and images (homepage) .css">
     <link rel="stylesheet" href="Buttons (homepage).css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="Sign up.css">
 </head>
 <body>
     <header> 
@@ -27,5 +29,32 @@
         <img src="Images\mountain_view_light.jpg" style="width:100%;">
         <div class="centered">Sign Up</div>
       </div>
+      
+      <!-- Sign Up Form-->
+      <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+            <!--bar for each information needed-->
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true" data-aos="zoom-in">Sign up</label>
+					<input type="text" name="txt" placeholder="Full name" required="" data-aos="fade-left" data-aos-offset="50">
+					<input type="email" name="email" placeholder="Email address" required="" data-aos="fade-left" data-aos-offset="100">
+					<input type="text" name="txt" placeholder="Physical address" required="" data-aos="fade-left" data-aos-offset="150">
+					<button>Sign up</button>
+				</form>
+			</div>
+            <!--Page for uploading proof-->
+			<div class="Fileupload">
+				<form>
+					<label for="chk" aria-hidden="true">Proof File data</label>
+					<small id="Uploadtext">=Proof of Address=</small>
+					<input type="file" id="myFile" name="filename" required="">
+					<small id="Uploadtext">=Proof of ID=</small>
+					<input type="file" id="myFile" name="filename" required="">
+					<button>File upload</button>
+				</form>
+			</div>
+	</div>
 </body>
 </html>
