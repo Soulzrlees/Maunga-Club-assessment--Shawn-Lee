@@ -2,7 +2,6 @@
 .containerintro {
     position: relative;
     text-align: center;
-    color: white;
 }
 
 /* Text style for the intro Text */
@@ -16,6 +15,9 @@
     border: 30px solid;
     border-radius: 100px;
     padding: 20px;
+    color: white;
+    border-color: aqua;
+    
   }
 
 /* body Color and hiding the tiny side bars on either side of the page */
@@ -35,7 +37,7 @@ body {
   padding-bottom: 80px;
   padding-right: 70%;
   padding-left: 10%;
-  background-color: black;
+  background-color: darkslateblue;
 }
 
 /* styles for info picture */
@@ -43,8 +45,8 @@ body {
   height: 300px;
   width: 700px;
   float: right;
-  margin-top: 20px;
-  margin-right: 10%;
+  margin-top: 50px;
+  margin-right: 5%;
   border: 20px solid;
-  border-color: whitesmoke;
+  border-color: white;
 }
