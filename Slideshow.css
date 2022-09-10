@@ -1,7 +1,7 @@
 body:not(header) {
   box-sizing: border-box
 }
-body {font-family: Verdana, sans-serif; margin:0}
+body {margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -12,6 +12,7 @@ img {vertical-align: middle;}
   margin: auto;
   border: 20px solid;
   border-radius: 20px;
+  border-color: aqua;
   
 }
 
@@ -19,6 +20,8 @@ img {vertical-align: middle;}
 #Chaletextrainfo{
     font-size: 50px;
     text-align: center;
+    background-color: aqua;
+    color: white;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -28,12 +31,13 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: aqua;
 }
 
 /* The dots/bullets/indicators */
@@ -42,7 +46,7 @@ img {vertical-align: middle;}
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: black;
+    background-color: aqua;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -55,14 +59,9 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: whitesmoke;
-}
-
 /* Caption text */
 .text {
-  color: black;
+  color: white;
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
@@ -74,12 +73,12 @@ img {vertical-align: middle;}
 
 /* Number text (1/9 etc) */
 .numbertext {
-  color: black;
+  color: white;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  font-weight: 1000px;
+  font-size: 30px;
 }
 
 .active, .dot:hover {
