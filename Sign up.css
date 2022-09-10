@@ -1,11 +1,4 @@
-body{
-	margin: 0;
-	padding: 0;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-
+/* Main style of the layout and size of the sign up form */
 .main{
     margin-top: 100px;
     margin-left: auto;
@@ -18,6 +11,7 @@ body{
 	margin-bottom: 100px;
 }
 
+/*Text header style for the upload section */
 #Uploadtext{
     font-size: 20px;
     margin-left: 30%;
@@ -25,16 +19,19 @@ body{
 	color: white;
 }
 
+/* hides the ticbox */
 #chk{
 	display: none;
 }
 
+/* Size of the form */
 .signup{
 	position: relative;
 	width:100%;
 	height: 100%;
 }
 
+/* The Sign up and File and Proof of File data label styles */
 label{
 	color: black;
     font-size: 40px;
@@ -46,6 +43,7 @@ label{
 	transition: .5s ease-in-out;
 }
 
+/* The Sign up and File and Proof of File data label styles */
 input{
 	width: 60%;
 	height: 20px;
@@ -60,6 +58,7 @@ input{
 	outline: none;
 }
 
+/* Buttons for Submitting the Files and text details */
 button{
 	width: 60%;
 	height: 40px;
@@ -82,6 +81,7 @@ button:hover{
 	background: grey;
 }
 
+/* Size of the file upload page */
 .Fileupload{
 	height: 560px;
 	background: aqua;
@@ -95,6 +95,7 @@ button:hover{
 	transform: scale(.6);
 }
 
+/* Check if there is a user input in the Sign Up form */
 #chk:checked ~ .Fileupload{
 	transform: translateY(-500px);
 }
