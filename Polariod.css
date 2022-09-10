@@ -5,8 +5,7 @@
     background-color: whitesmoke;
     font-size: 20px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: black;
+    background-color: darkslateblue;
     color: white;
     position: relative; left: 150px;
 
@@ -22,8 +21,7 @@
     background-color: whitesmoke;
     font-size: 20px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: black;
+    background-color: darkslateblue;
     color: white;
     position: relative; right: 150  px;
 
@@ -44,7 +42,7 @@
     width: 80%;
     padding-left: 20%;
     border: 20px solid;
-    border-color: black;
+    border-color: aqua;
     border-radius: 1000px;
     margin-left: 250px;   
 }
@@ -55,7 +53,7 @@
     width: 80%;
     padding-right: 20%;
     border: 20px solid;
-    border-color: black;
+    border-color: aqua;
     border-radius: 1000px;
     margin-right: 250px;
 }
@@ -66,7 +64,7 @@
     width: 80%;
     padding-left: 20%;
     border: 20px solid;
-    border-color: black;
+    border-color: aqua;
     border-radius: 1000px;
     margin-left: 250px;
 }
